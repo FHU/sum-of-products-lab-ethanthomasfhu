@@ -1,6 +1,3 @@
-list1 = (input())
-list2 = (input())
-
 def sum_of_products(list1, list2):
     sum = 0
     for i in range(len(list1)):
@@ -8,8 +5,11 @@ def sum_of_products(list1, list2):
     return sum
 
 if __name__ == '__main__':
+    list1 = (input())
+    list2 = (input())
+
     if len(list1) != len(list2):
         print ("Error.")
-        
+
     if len(list1) == len(list2):
         print(sum_of_products(list1, list2))
